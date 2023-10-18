@@ -83,10 +83,14 @@ img:hover{
 }
 .text h5{
     border-radius: 50px;
-    background-color: rgb(226, 174, 226);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     font-size: 15px;
     padding: 10px 11px;
     font-weight: 600;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .center h1{
     margin-top: 45px;
@@ -623,5 +627,19 @@ footer{
 
 
 @keyframes color {
-    
+    0%{
+        background-color: #E5E2E0;
+    }
+    25%{
+        background-color: #E0B7EF;
+    }
+    50%{
+        background-color: rgb(226, 174, 226);
+    }
+    75%{
+        background-color: #F8F7F4;
+    }
+    100%{
+        background-color: #F9E298;
+    }
 }
